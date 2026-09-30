@@ -8,7 +8,7 @@ Stylus userstyle (UserCSS) · Chrome, Firefox, Edge, Brave, Opera · auto-update
 [![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-8b5cf6?style=for-the-badge)](https://raw.githubusercontent.com/rojnwa/fly-io-dark-mode/main/fly-io-dark-mode.user.css)
 [![License: MIT](https://img.shields.io/badge/License-MIT-3b3b4f?style=for-the-badge)](LICENSE)
 
-![Fly.io dashboard: light (before) and dark mode (after)](assets/before-after.webp)
+![Fly.io dashboard in dark mode, with a slider wiping to Fly's default light theme and back](assets/light-dark-slider.webp)
 
 </div>
 
