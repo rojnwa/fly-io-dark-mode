@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Saved dashboard pages ("Webpage, Complete") contain personal data - keep them out of git.
+*.html
+*_files/

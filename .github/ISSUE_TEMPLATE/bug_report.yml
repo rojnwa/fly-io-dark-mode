@@ -1,0 +1,41 @@
+name: Something looks off
+description: A dashboard page or element is unreadable, still light, or broken with the theme on.
+labels: ["bug"]
+body:
+  - type: input
+    id: path
+    attributes:
+      label: Page path
+      description: The part after fly.io. Replace your org and app names with placeholders.
+      placeholder: /apps/<app>/machines
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong?
+      placeholder: The volume size chart is white, labels are unreadable…
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag and drop an image. A light-mode screenshot of the same spot helps too.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 140, Firefox 143…
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Stylus version and theme version
+      description: Both are shown in the Stylus manager.
+      placeholder: Stylus 2.3.x, Fly.io Dark Mode 1.2.0
+    validations:
+      required: true
