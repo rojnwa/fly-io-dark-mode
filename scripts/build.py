@@ -24,7 +24,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-VERSION = "1.2.0"
+VERSION = "1.2.1"
 REPO = "rojnwa/fly-io-dark-mode"
 OUT_NAME = "fly-io-dark-mode.user.css"
 SIGN_IN_URL = "https://fly.io/app/sign-in"
@@ -665,6 +665,14 @@ select:-webkit-autofill {{
 }}
 input:autofill {{
   filter: none;
+}}
+
+/* ---- Hard-coded black text ---------------------------------------------
+ * The fly.toml viewer renders <code style="color: #000000 !important">. No
+ * stylesheet can beat an inline !important colour, but
+ * -webkit-text-fill-color (Chrome, Edge, Safari, Firefox) paints over it. */
+:is([style*="color: #000"], [style*="color:#000"], [style*="color: black"], [style*="color:black"]):not([style*="background"]) {{
+  -webkit-text-fill-color: {text};
 }}
 
 /* ---- Charts (uPlot draws axes/labels on canvas with dark ink) ---------- */

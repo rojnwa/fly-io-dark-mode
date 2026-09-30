@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Fly.io Dark Mode
 @namespace      github.com/rojnwa/fly-io-dark-mode
-@version        1.2.0
+@version        1.2.1
 @description    Smooth, purple-tinted dark theme for the Fly.io dashboard: apps, Machines, Managed Postgres, billing, tokens and sign-in.
 @author         Roman Wagner (https://github.com/rojnwa)
 @homepageURL    https://github.com/rojnwa/fly-io-dark-mode
@@ -1929,6 +1929,14 @@ select:-webkit-autofill {
 }
 input:autofill {
   filter: none;
+}
+
+/* ---- Hard-coded black text ---------------------------------------------
+ * The fly.toml viewer renders <code style="color: #000000 !important">. No
+ * stylesheet can beat an inline !important colour, but
+ * -webkit-text-fill-color (Chrome, Edge, Safari, Firefox) paints over it. */
+:is([style*="color: #000"], [style*="color:#000"], [style*="color: black"], [style*="color:black"]):not([style*="background"]) {
+  -webkit-text-fill-color: #e6e7f5;
 }
 
 /* ---- Charts (uPlot draws axes/labels on canvas with dark ink) ---------- */

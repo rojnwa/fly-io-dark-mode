@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.2.1] - 2026-09-30
+
+### Fixed
+- Text in the fly.toml viewer (app → fly.toml → Full config) was black on the dark background. The page hard-codes an inline `color: #000000 !important`, so the theme now paints over it with `-webkit-text-fill-color`.
+
 ## [1.2.0] - 2026-09-30
 
 ### Added
@@ -30,6 +35,7 @@ All notable changes to this project are documented here. The format follows
 ### Added
 - First release: dark theme for the Fly.io dashboard and sign-in page.
 
+[1.2.1]: https://github.com/rojnwa/fly-io-dark-mode/releases/tag/v1.2.1
 [1.2.0]: https://github.com/rojnwa/fly-io-dark-mode/releases/tag/v1.2.0
 [1.1.0]: https://github.com/rojnwa/fly-io-dark-mode/releases/tag/v1.1.0
 [1.0.0]: https://github.com/rojnwa/fly-io-dark-mode/releases/tag/v1.0.0
